@@ -86,7 +86,6 @@ func slogan() {
 
 //parse command-line flag
 func parseFlag() {
-
 	flag.StringVar(&redisCfg.url, redisUrl, "localhost:6379", "redis server url")
 	flag.StringVar(&redisCfg.password, redisPassword, "", "redis password (default is empty)")
 	flag.IntVar(&redisCfg.db, redisDB, 0, "redis db (default 0)")
