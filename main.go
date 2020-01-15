@@ -9,7 +9,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/go-redis/redis"
-	logger "redis-tools/utils"
+	logger "github.com/ty4z2008/find-bigkeys/utils"
 	"strings"
 )
 
