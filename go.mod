@@ -1,4 +1,4 @@
-module redis-tools
+module find-bigkeys
 
 go 1.12
 
