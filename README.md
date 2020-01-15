@@ -1,6 +1,10 @@
 # find-bigkeys
 redis tools. find big keys in redis
 
+# requirement
+
+go 1.11+
+
 Usage:
 ```bash
 
