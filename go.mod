@@ -1,4 +1,4 @@
-module find-bigkeys
+module github.com/ty4z2008/find-bigkeys
 
 go 1.12
 
