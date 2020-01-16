@@ -54,12 +54,12 @@ func main() {
 		logger.Info("Error:", err)
 		return
 	}
-	fmt.Println("#############################\n")
-	fmt.Println("System information\n")
+	fmt.Println("#############################")
+	fmt.Println("System information")
 	fmt.Println("Used memory:", redisInfo["used_memory_human"])
 	fmt.Println("Total memory:", redisInfo["total_system_memory_human"])
-	fmt.Println("#############################\n")
-	fmt.Println("Start scan redis server\n")
+	fmt.Println("#############################")
+	fmt.Println("Start scan redis server")
 
 	var cursor uint64
 	for {
@@ -98,7 +98,7 @@ func parseFlag() {
 }
 
 //Init connection
-func Init() {
+func Init() error {
 	slogan()
 	parseFlag()
 	client = redis.NewClient(&redis.Options{
@@ -106,6 +106,7 @@ func Init() {
 		Password: redisCfg.password, // no password set
 		DB:       redisCfg.db,       // use default DB
 	})
+	return nil
 
 }
 
